@@ -1,5 +1,5 @@
-#ifndef LIBCAPTCHA_H
-#define LIBCAPTCHA_H
+#ifndef GD_CAPTCHA_H
+#define GD_CAPTCHA_H
 
 #include <stdio.h>
 

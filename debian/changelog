@@ -1,0 +1,5 @@
+captcha-gd (1.0.0-1) groovy; urgency=medium
+
+  * Initial release.
+
+ -- Chris <dpkg@chris-nz.com>  Fri, 29 Oct 2021 21:37:04 +1300

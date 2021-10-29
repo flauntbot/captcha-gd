@@ -1,9 +1,9 @@
-build:
-	$(CC) -I/usr/local/include -c captcha.c -o captcha.o
-	$(CC) -I/usr/local/include -c libcaptcha.c -o libcaptcha.o
-	$(AR) rc libcaptcha.a libcaptcha.o
-	ranlib libcaptcha.a
-	$(CC) -I/usr/local/include -o captcha captcha.o -L/usr/local/lib -lgd -L. -lcaptcha -Wl,--format=binary -Wl,captcha.ttf -Wl,--format=default
+PROGNAME = captcha-gd
+
+all: $(PROGNAME)
 
 clean:
-	rm -f captcha *.a *.o
+	rm -f $(PROGNAME) *.o
+
+$(PROGNAME):
+	$(CC) -I/usr/local/include -o $(PROGNAME) captcha-gd.c -L/usr/local/lib -lgd -L.

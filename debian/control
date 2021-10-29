@@ -1,0 +1,21 @@
+Source: captcha-gd
+Section: libs
+Priority: optional
+Maintainer: Chris <dpkg@chris-nz.com>
+Standards-Version: 4.5.0
+Build-Depends: debhelper-compat (= 10), libgd-dev
+Homepage: http://www.gnu.org/software/hello/
+
+Package: captcha-gd
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Captcha image renderer
+ This package provides a CLI-driven captcha renderer
+ like what you might see on traditional websites' registration pages.
+ .
+ It favours convention over configuration:
+ You pass in the text and the font-filename as parameters,
+ and the program returns a generated PNG over stdout.
+ .
+ It is intended for use in scripts where more traditional
+ methods of captcha-generation prove troublesome.

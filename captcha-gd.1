@@ -1,0 +1,17 @@
+.TH CAPTCHA-GD "1" "October 2021" "captcha-gd 1.0.0" "User Commands"
+.SH NAME
+captcha-gd - captcha image generation program
+.SH SYNOPSIS
+.B captcha-gd
+"\fI\,TEXT\/\fR"
+"\fI\,FONTFILE\/\fR"
+.SH DESCRIPTION
+Generate a captcha image using a string of letters and some visual noise.
+.TP
+\fBTEXT\fR
+The string to render in the captcha image
+.TP
+\fBFONTFILE\fR
+Path to a ttf or otf font with which to draw the captcha text
+.SH EXAMPLE
+captcha-gd "a1RXCp" /usr/share/fonts/truetype/freefont/FreeMonoOblique.ttf > cap.png

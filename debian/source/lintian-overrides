@@ -1,0 +1,4 @@
+# i hate best practice i hate best practice :-p
+captcha-gd: no-debian-changes
+# i know it's naughty. the debug package is useless. is there a better way?
+captcha-gd: debian-rules-sets-DEB_BUILD_OPTIONS
